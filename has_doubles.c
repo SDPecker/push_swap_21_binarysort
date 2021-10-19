@@ -6,13 +6,13 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 15:06:36 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/17 19:26:31 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	has_doubles(stack st)
+int	has_doubles(t_stack st)
 {
 	int	i;
 	int	j;

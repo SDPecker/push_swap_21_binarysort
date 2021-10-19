@@ -6,7 +6,7 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 22:58:41 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/18 23:02:44 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 20:53:02 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int	input_correct(char **input, int n)
 				return (0);
 			j++;
 		}
+		if (!check_input_num(input[i]))
+			return (0);
 		i++;
 		j = 0;
 	}

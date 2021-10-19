@@ -6,13 +6,13 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 15:06:43 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/18 23:01:17 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	exec_sa(stack *a)
+void	exec_sa(t_stack *a)
 {
 	int	buf;
 
@@ -25,7 +25,7 @@ void	exec_sa(stack *a)
 	write(1, "sa\n", 3);
 }
 
-void	exec_sb(stack *b)
+void	exec_sb(t_stack *b)
 {
 	int	buf;
 
@@ -38,7 +38,7 @@ void	exec_sb(stack *b)
 	write(1, "sb\n", 3);
 }
 
-void	exec_ss(stack *a, stack *b)
+void	exec_ss(t_stack *a, t_stack *b)
 {
 	silent_sa(a);
 	silent_sb(b);

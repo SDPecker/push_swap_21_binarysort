@@ -6,15 +6,15 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 23:06:39 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/18 23:07:14 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-stack	simplify(stack *st)
+t_stack	simplify(t_stack *st)
 {
-	stack	res;
+	t_stack	res;
 	int		i;
 	int		j;
 	int		val;

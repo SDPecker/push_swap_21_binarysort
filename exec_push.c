@@ -6,13 +6,13 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 15:06:55 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/18 22:55:30 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	exec_pa(stack *a, stack *b)
+void	exec_pa(t_stack *a, t_stack *b)
 {
 	int	i;
 	int	buf;
@@ -41,7 +41,7 @@ void	exec_pa(stack *a, stack *b)
 	write(1, "pa\n", 3);
 }
 
-void	exec_pb(stack *a, stack *b)
+void	exec_pb(t_stack *a, t_stack *b)
 {
 	int	i;
 	int	buf;

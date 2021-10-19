@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "push_swap.h"
 
-void	print_stack(stack st)
+void	print_stack(t_stack st)
 {
 	int	i;
 

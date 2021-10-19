@@ -6,13 +6,13 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 15:06:47 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/18 22:55:30 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	exec_ra(stack *a)
+void	exec_ra(t_stack *a)
 {
 	int		i;
 	int		buf;
@@ -31,7 +31,7 @@ void	exec_ra(stack *a)
 	write(1, "ra\n", 3);
 }
 
-void	exec_rb(stack *b)
+void	exec_rb(t_stack *b)
 {
 	int		i;
 	int		buf;
@@ -50,7 +50,7 @@ void	exec_rb(stack *b)
 	write(1, "rb\n", 3);
 }
 
-void	exec_rra(stack *a)
+void	exec_rra(t_stack *a)
 {
 	int	i;
 	int	buf;
@@ -69,7 +69,7 @@ void	exec_rra(stack *a)
 	write(1, "rra\n", 4);
 }
 
-void	exec_rrb(stack *b)
+void	exec_rrb(t_stack *b)
 {
 	int	i;
 	int	buf;

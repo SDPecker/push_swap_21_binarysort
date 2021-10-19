@@ -1,50 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   max_min_ind.c                                      :+:      :+:    :+:   */
+/*   check_input_num.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/11 14:43:25 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
+/*   Created: 2021/10/19 17:25:48 by amohiam           #+#    #+#             */
+/*   Updated: 2021/10/19 20:57:30 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	get_max_ind(t_stack st)
+int	ft_strlen(char *ln)
 {
-	int	res;
 	int	i;
 
-	res = 0;
-	i = 1;
-	while (i < st.size)
-	{
-		if (st.array[i] > st.array[res])
-			res = i;
+	i = 0;
+	while (ln[i])
 		i++;
-	}
-	return (res);
+	return (i);
 }
 
-int	get_min_ind(t_stack st)
+int	check_input_num(char *input)
 {
-	int	res;
-	int	i;
+	int		i;
+	int		j;
+	char	*max_int;
 
-	res = 0;
-	i = 1;
-	while (i < st.size)
-	{
-		if (st.array[i] < st.array[res])
-			res = i;
+	max_int = "2147483647";
+	i = 0;
+	j = 0;
+	if (input[i] == '-')
 		i++;
+	if (ft_strlen(input + i) < 10)
+		return (1);
+	if (ft_strlen(input + i) > 10)
+		return (0);
+	while (j < ft_strlen(input + i))
+	{
+		if ((input + i)[j] > max_int[j])
+			return (0);
+		if ((input + i)[j] < max_int[j])
+			return (1);
+		j++;
 	}
-	return (res);
-}
-
-int	max(t_stack st)
-{
-	return (st.array[get_max_ind(st)]);
+	return (1);
 }

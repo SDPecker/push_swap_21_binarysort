@@ -6,13 +6,13 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 15:37:43 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/18 22:41:35 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	sort_3(stack *a)
+void	sort_3(t_stack *a)
 {
 	if (get_min_ind(*a) == 0)
 	{
@@ -41,7 +41,7 @@ void	sort_3(stack *a)
 	}
 }
 
-void	sort_5(stack *a, stack *b)
+void	sort_5(t_stack *a, t_stack *b)
 {
 	exec_pb(a, b);
 	exec_pb(a, b);
@@ -62,7 +62,7 @@ void	sort_5(stack *a, stack *b)
 		exec_ra(a);
 }
 
-void	sort_2(stack *a)
+void	sort_2(t_stack *a)
 {
 	if (get_max_ind(*a) == 0)
 		exec_sa(a);

@@ -6,13 +6,13 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 21:12:49 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/18 22:56:37 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	silent_ra(stack *a)
+void	silent_ra(t_stack *a)
 {
 	int		i;
 	int		buf;
@@ -30,7 +30,7 @@ void	silent_ra(stack *a)
 	}
 }
 
-void	silent_rb(stack *b)
+void	silent_rb(t_stack *b)
 {
 	int		i;
 	int		buf;
@@ -48,7 +48,7 @@ void	silent_rb(stack *b)
 	}
 }
 
-void	silent_rra(stack *a)
+void	silent_rra(t_stack *a)
 {
 	int	i;
 	int	buf;
@@ -66,7 +66,7 @@ void	silent_rra(stack *a)
 	}
 }
 
-void	silent_rrb(stack *b)
+void	silent_rrb(t_stack *b)
 {
 	int	i;
 	int	buf;

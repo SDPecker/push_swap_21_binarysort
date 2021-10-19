@@ -6,14 +6,14 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 23:24:23 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/19 16:51:11 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include <stdio.h> //TESTING ONLY!
 
-void	bit_sort(stack *a, stack *b)
+void	bit_sort(t_stack *a, t_stack *b)
 {
 	int		i;
 	int		j;

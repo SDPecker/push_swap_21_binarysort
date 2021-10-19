@@ -6,7 +6,7 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 15:07:38 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/19 16:58:27 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	main(int argc, char **argv)
 {	
-	stack	a;
-	stack	b;
+	t_stack	a;
+	t_stack	b;
 
 	if (!input_correct(argv, argc))
 	{
@@ -38,6 +38,5 @@ int	main(int argc, char **argv)
 		sort_5(&a, &b);
 	else
 		bit_sort(&a, &b);
-	//print_stack(a);
 	return (0);
 }
