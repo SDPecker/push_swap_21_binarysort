@@ -6,7 +6,7 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 15:07:38 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/21 17:25:30 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(int argc, char **argv)
 	}
 	if (a.size == 3)
 		sort_3(&a);
-	else if (a.size == 2)
+	else if (a.size <= 2)
 		sort_2(&a);
 	else if (a.size == 5)
 		sort_5(&a, &b);

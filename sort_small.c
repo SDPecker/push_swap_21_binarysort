@@ -6,7 +6,7 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 15:37:43 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/21 17:25:17 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,6 @@ void	sort_5(t_stack *a, t_stack *b)
 
 void	sort_2(t_stack *a)
 {
-	if (get_max_ind(*a) == 0)
+	if (get_min_ind(*a) > 0)
 		exec_sa(a);
 }
