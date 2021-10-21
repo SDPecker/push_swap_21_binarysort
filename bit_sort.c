@@ -6,7 +6,7 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 23:24:23 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/21 14:48:32 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,10 @@ int	get_max_bit(int num)
 
 	tmp = num;
 	res = 0;
-	while(tmp / 2 > 0)
+	while (tmp / 2 > 0)
 	{
 		res++;
 		tmp /= 2;
 	}
-	return(res);
+	return (res);
 }

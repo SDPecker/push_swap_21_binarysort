@@ -6,7 +6,7 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 22:58:41 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/19 20:53:02 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/21 14:50:21 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	input_correct(char **input, int n)
 		if (input[i][j] == '-')
 			j++;
 		if (!input[i][j])
-			return (0);		
+			return (0);
 		while (input[i][j])
 		{
 			if (input[i][j] < '0' || input[i][j] > '9')

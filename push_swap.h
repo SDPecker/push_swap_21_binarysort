@@ -6,12 +6,14 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 15:07:44 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/19 21:14:14 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/21 14:35:38 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
+# include <unistd.h>
+# include <stdlib.h>
 
 typedef struct stack
 {
@@ -44,6 +46,7 @@ void	silent_sb(t_stack *a);
 void	silent_ss(t_stack *a, t_stack *b);
 
 int		is_number(const char *ln);
+int		is_sorted(int *arr, int size);
 int		new_atoi(char *ln);
 t_stack	input_to_stack(char **input, int n);
 int		input_correct(char **input, int	n);
@@ -63,3 +66,10 @@ void	sort_2(t_stack *a);
 void	sort_3(t_stack *st);
 void	sort_5(t_stack *a, t_stack *b);
 void	bit_sort(t_stack *a, t_stack *b);
+
+char	*read_command(void);
+void	run_command(char *com, t_stack *a, t_stack *b);
+void	run_swap(char *com, t_stack *a, t_stack *b);
+void	run_push(char *com, t_stack *a, t_stack *b);
+void	run_rotate(char *com, t_stack *a, t_stack *b);
+#endif

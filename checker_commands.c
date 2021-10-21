@@ -6,7 +6,7 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 12:59:09 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/20 18:06:59 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/21 15:34:01 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ char	*read_command(void)
 {
 	int		reader;
 	char	*res;
-	char	ch;
 	int		i;
 
 	res = (char *)malloc(3);
@@ -45,36 +44,36 @@ void	run_command(char *com, t_stack *a, t_stack *b)
 void	run_swap(char *com, t_stack *a, t_stack *b)
 {
 	if (com[1] == 'a')
-		silent_sa(a);
+		exec_sa(a);
 	if (com[1] == 'b')
-		silent_sb(b);
+		exec_sb(b);
 	if (com[1] == 's')
-		silent_ss(a, b);
+		exec_ss(a, b);
 }
 
 void	run_push(char *com, t_stack *a, t_stack *b)
 {
 	if (com[1] == 'a')
-		silent_pa(a, b);
+		exec_pa(a, b);
 	if (com[1] == 'b')
-		silent_pb(a, b);
+		exec_pb(a, b);
 }
 
 void	run_rotate(char *com, t_stack *a, t_stack *b)
 {
 	if (com[1] == 'a')
-		silent_ra(a);
+		exec_ra(a);
 	if (com[1] == 'b')
-		silent_rb(b);
+		exec_rb(b);
 	if (com[1] == 'r')
 	{
 		if (com[2] == '\n')
-			silent_rr(a, b);
+			exec_rr(a, b);
 		if (com[2] == 'a')
-			silent_rra(a);
+			exec_rra(a);
 		if (com[2] == 'b')
-			silent_rrb(b);
+			exec_rrb(b);
 		if (com[2] == 'r')
-			silent_rrr(a, b);
+			exec_rrr(a, b);
 	}
 }
