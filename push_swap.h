@@ -6,7 +6,7 @@
 /*   By: amohiam <amohiam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 15:07:44 by amohiam           #+#    #+#             */
-/*   Updated: 2021/10/21 14:35:38 by amohiam          ###   ########.fr       */
+/*   Updated: 2021/10/25 12:12:50 by amohiam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,4 +72,8 @@ void	run_command(char *com, t_stack *a, t_stack *b);
 void	run_swap(char *com, t_stack *a, t_stack *b);
 void	run_push(char *com, t_stack *a, t_stack *b);
 void	run_rotate(char *com, t_stack *a, t_stack *b);
+int		ret_error(void);
+int		com_cycle(t_stack *a, t_stack *b);
+int		com_error(char *com);
+int		ft_strlen(char *ln);
 #endif
